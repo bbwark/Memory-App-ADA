@@ -2,7 +2,7 @@
 //  MemoryApp.swift
 //  Memory
 //
-//  Created by Bruno De Vivo on 20/10/22.
+//  Created by giovanni russo on 17/10/22.
 //
 
 import SwiftUI
