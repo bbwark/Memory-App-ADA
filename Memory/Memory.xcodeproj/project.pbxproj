@@ -14,6 +14,11 @@
 		15A1E42C2902DF2900603D8A /* AuditoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E42B2902DF2900603D8A /* AuditoryResult.swift */; };
 		15A1E42E2902E4FF00603D8A /* KineticsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E42D2902E4FF00603D8A /* KineticsResult.swift */; };
 		15A1E4322902E65F00603D8A /* TactileResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4312902E65F00603D8A /* TactileResult.swift */; };
+		15A1E4362902E86700603D8A /* QuestionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4352902E86700603D8A /* QuestionProtocol.swift */; };
+		15A1E4382902E98000603D8A /* FirstQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4372902E98000603D8A /* FirstQuestion.swift */; };
+		15A1E43A2902F1C300603D8A /* SecondQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4392902F1C300603D8A /* SecondQuestion.swift */; };
+		15A1E43C2902F1EC00603D8A /* ThirdQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E43B2902F1EC00603D8A /* ThirdQuestion.swift */; };
+		15A1E43E2902F21100603D8A /* FourthQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E43D2902F21100603D8A /* FourthQuestion.swift */; };
 		15A6D4DA290175AD00C5E54F /* MemoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A6D4D9290175AD00C5E54F /* MemoryApp.swift */; };
 		15A6D4DC290175AD00C5E54F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A6D4DB290175AD00C5E54F /* ContentView.swift */; };
 		15A6D4DE290175AD00C5E54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A6D4DD290175AD00C5E54F /* Assets.xcassets */; };
@@ -28,6 +33,11 @@
 		15A1E42B2902DF2900603D8A /* AuditoryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditoryResult.swift; sourceTree = "<group>"; };
 		15A1E42D2902E4FF00603D8A /* KineticsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineticsResult.swift; sourceTree = "<group>"; };
 		15A1E4312902E65F00603D8A /* TactileResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TactileResult.swift; sourceTree = "<group>"; };
+		15A1E4352902E86700603D8A /* QuestionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionProtocol.swift; sourceTree = "<group>"; };
+		15A1E4372902E98000603D8A /* FirstQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestion.swift; sourceTree = "<group>"; };
+		15A1E4392902F1C300603D8A /* SecondQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestion.swift; sourceTree = "<group>"; };
+		15A1E43B2902F1EC00603D8A /* ThirdQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestion.swift; sourceTree = "<group>"; };
+		15A1E43D2902F21100603D8A /* FourthQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuestion.swift; sourceTree = "<group>"; };
 		15A6D4D6290175AD00C5E54F /* Memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A6D4D9290175AD00C5E54F /* MemoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryApp.swift; sourceTree = "<group>"; };
 		15A6D4DB290175AD00C5E54F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +69,11 @@
 		15A1E4232902CFC600603D8A /* QuestionsViews */ = {
 			isa = PBXGroup;
 			children = (
+				15A1E4352902E86700603D8A /* QuestionProtocol.swift */,
+				15A1E4372902E98000603D8A /* FirstQuestion.swift */,
+				15A1E4392902F1C300603D8A /* SecondQuestion.swift */,
+				15A1E43B2902F1EC00603D8A /* ThirdQuestion.swift */,
+				15A1E43D2902F21100603D8A /* FourthQuestion.swift */,
 			);
 			path = QuestionsViews;
 			sourceTree = "<group>";
@@ -183,14 +198,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A1E42E2902E4FF00603D8A /* KineticsResult.swift in Sources */,
+				15A1E4362902E86700603D8A /* QuestionProtocol.swift in Sources */,
 				15A1E4262902D00E00603D8A /* ResultProtocol.swift in Sources */,
 				15A1E4322902E65F00603D8A /* TactileResult.swift in Sources */,
 				15A6D4DC290175AD00C5E54F /* ContentView.swift in Sources */,
 				15A1E4222902CFBD00603D8A /* StartTestView.swift in Sources */,
 				15A6D4DA290175AD00C5E54F /* MemoryApp.swift in Sources */,
 				15A1E42C2902DF2900603D8A /* AuditoryResult.swift in Sources */,
+				15A1E4382902E98000603D8A /* FirstQuestion.swift in Sources */,
+				15A1E43E2902F21100603D8A /* FourthQuestion.swift in Sources */,
 				15A1E4282902D26400603D8A /* VisuallyResult.swift in Sources */,
 				15A1E42A2902D5F200603D8A /* ColorHexPicker.swift in Sources */,
+				15A1E43C2902F1EC00603D8A /* ThirdQuestion.swift in Sources */,
+				15A1E43A2902F1C300603D8A /* SecondQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
