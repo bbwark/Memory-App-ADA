@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15A1E4222902CFBD00603D8A /* StartTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4212902CFBD00603D8A /* StartTestView.swift */; };
+		15A1E4262902D00E00603D8A /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4252902D00E00603D8A /* ResultProtocol.swift */; };
+		15A1E4282902D26400603D8A /* VisuallyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4272902D26400603D8A /* VisuallyResult.swift */; };
+		15A1E42A2902D5F200603D8A /* ColorHexPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4292902D5F200603D8A /* ColorHexPicker.swift */; };
+		15A1E42C2902DF2900603D8A /* AuditoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E42B2902DF2900603D8A /* AuditoryResult.swift */; };
+		15A1E42E2902E4FF00603D8A /* KineticsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E42D2902E4FF00603D8A /* KineticsResult.swift */; };
+		15A1E4322902E65F00603D8A /* TactileResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1E4312902E65F00603D8A /* TactileResult.swift */; };
 		15A6D4DA290175AD00C5E54F /* MemoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A6D4D9290175AD00C5E54F /* MemoryApp.swift */; };
 		15A6D4DC290175AD00C5E54F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A6D4DB290175AD00C5E54F /* ContentView.swift */; };
 		15A6D4DE290175AD00C5E54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A6D4DD290175AD00C5E54F /* Assets.xcassets */; };
@@ -14,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15A1E4212902CFBD00603D8A /* StartTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTestView.swift; sourceTree = "<group>"; };
+		15A1E4252902D00E00603D8A /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
+		15A1E4272902D26400603D8A /* VisuallyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisuallyResult.swift; sourceTree = "<group>"; };
+		15A1E4292902D5F200603D8A /* ColorHexPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHexPicker.swift; sourceTree = "<group>"; };
+		15A1E42B2902DF2900603D8A /* AuditoryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditoryResult.swift; sourceTree = "<group>"; };
+		15A1E42D2902E4FF00603D8A /* KineticsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineticsResult.swift; sourceTree = "<group>"; };
+		15A1E4312902E65F00603D8A /* TactileResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TactileResult.swift; sourceTree = "<group>"; };
 		15A6D4D6290175AD00C5E54F /* Memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A6D4D9290175AD00C5E54F /* MemoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryApp.swift; sourceTree = "<group>"; };
 		15A6D4DB290175AD00C5E54F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +46,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15A1E41D2902CF4100603D8A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				15A1E4242902CFCF00603D8A /* ResultsViews */,
+				15A1E4232902CFC600603D8A /* QuestionsViews */,
+				15A1E4212902CFBD00603D8A /* StartTestView.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		15A1E4232902CFC600603D8A /* QuestionsViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QuestionsViews;
+			sourceTree = "<group>";
+		};
+		15A1E4242902CFCF00603D8A /* ResultsViews */ = {
+			isa = PBXGroup;
+			children = (
+				15A1E4252902D00E00603D8A /* ResultProtocol.swift */,
+				15A1E4272902D26400603D8A /* VisuallyResult.swift */,
+				15A1E42B2902DF2900603D8A /* AuditoryResult.swift */,
+				15A1E42D2902E4FF00603D8A /* KineticsResult.swift */,
+				15A1E4312902E65F00603D8A /* TactileResult.swift */,
+			);
+			path = ResultsViews;
+			sourceTree = "<group>";
+		};
 		15A6D4CD290175AD00C5E54F = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +94,12 @@
 		15A6D4D8290175AD00C5E54F /* Memory */ = {
 			isa = PBXGroup;
 			children = (
+				15A1E41D2902CF4100603D8A /* Test */,
 				15A6D4D9290175AD00C5E54F /* MemoryApp.swift */,
 				15A6D4DB290175AD00C5E54F /* ContentView.swift */,
 				15A6D4DD290175AD00C5E54F /* Assets.xcassets */,
 				15A6D4DF290175AD00C5E54F /* Preview Content */,
+				15A1E4292902D5F200603D8A /* ColorHexPicker.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -137,8 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A1E42E2902E4FF00603D8A /* KineticsResult.swift in Sources */,
+				15A1E4262902D00E00603D8A /* ResultProtocol.swift in Sources */,
+				15A1E4322902E65F00603D8A /* TactileResult.swift in Sources */,
 				15A6D4DC290175AD00C5E54F /* ContentView.swift in Sources */,
+				15A1E4222902CFBD00603D8A /* StartTestView.swift in Sources */,
 				15A6D4DA290175AD00C5E54F /* MemoryApp.swift in Sources */,
+				15A1E42C2902DF2900603D8A /* AuditoryResult.swift in Sources */,
+				15A1E4282902D26400603D8A /* VisuallyResult.swift in Sources */,
+				15A1E42A2902D5F200603D8A /* ColorHexPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
