@@ -26,6 +26,15 @@ struct StartTestView: View {
                 .padding(.bottom, 30.0)
                         
             ZStack{
+                //Effect Circumference
+                Circle()
+                    .stroke(fadeButton ? Color(hex: "00D4D2") : Color(hex: "8415D4"), lineWidth: 4.0)
+                    .frame(width: 200.0, height: 200.0)
+                    .blur(radius: 2.0)
+                    .opacity(fadeButton ? 0.3 : 0.2)
+                    .scaleEffect(fadeButton ? 0.57 : 1.0)
+                
+                //Purple Circumference
                 Circle()
                     .stroke(Color(hex: "8415D4"), lineWidth: 4.0)
                     .frame(width: 200.0, height: 200.0)
@@ -34,7 +43,6 @@ struct StartTestView: View {
                 Button {
                 } label: {
                     ZStack{
-                        
                         //Cyan Circle
                         Circle()
                             .frame(width: 120.0, height: 120.0)
@@ -45,13 +53,6 @@ struct StartTestView: View {
                             .fontWeight(.heavy)
                             .foregroundColor(Color.white)
                         
-                        //Effect Circumference
-                        Circle()
-                            .stroke(Color(hex: "8415D4"), lineWidth: 4.0)
-                            .frame(width: 200.0, height: 200.0)
-                            .blur(radius: 2.0)
-                            .opacity(fadeButton ? 0 : 0.2)
-                            .scaleEffect(fadeButton ? 0.57 : 1.0)
                     }
                 }.onAppear{
                     withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: false)){
