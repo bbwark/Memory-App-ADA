@@ -1,14 +1,14 @@
 //
-//  MemoryApp.swift
-//  Memory
+//  MemoryAppApp.swift
+//  MemoryApp
 //
-//  Created by giovanni russo on 17/10/22.
+//  Created by Bruno De Vivo on 24/10/22.
 //
 
 import SwiftUI
 
 @main
-struct MemoryApp: App {
+struct MemoryAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
