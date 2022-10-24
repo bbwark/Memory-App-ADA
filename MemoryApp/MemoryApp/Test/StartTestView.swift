@@ -13,7 +13,7 @@ struct StartTestView: View {
         VStack{
             Spacer()
             
-            Image("brain logo")
+            Image("brain icon")
                 .resizable()
                 .frame(width: 143.0, height: 143.0)
                 .scaledToFit()
@@ -23,8 +23,9 @@ struct StartTestView: View {
             Text("What Memory Type\ndo you have?")
                 .font(.system(size: 30))
                 .multilineTextAlignment(.center)
-                .padding(.bottom, 30.0)
-                        
+            
+            Spacer()
+            
             ZStack{
                 //Effect Circumference
                 Circle()
