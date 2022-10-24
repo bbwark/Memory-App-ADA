@@ -11,8 +11,10 @@ struct Tips: View {
     @State var selection: Int = 1
     var symbol1 : String = "star"
     var symbol2 : String = ""
+ 
     
 
+    
     var body: some View {
         VStack{
             ZStack{
@@ -56,7 +58,6 @@ struct Tips: View {
                     if selection == 1{
                         ForEach(littleTip){num in
                             
-                                
                                 GeometryReader{ proxy in
                                     let scale = getScale(proxy: proxy)
                                     ZStack(alignment : .bottom){
@@ -92,13 +93,18 @@ struct Tips: View {
                                      
                                             Button(action: {
                                                 littleTip[num.id-1].starred = !littleTip[num.id-1].starred
+                                                selection = 2
+                                                selection = 1
                                             }) {
+                                                
+
                                                 Image(systemName: littleTip[num.id-1].starred == true ? "star.fill" : "star")
                                                       .resizable()
                                                       .frame(width: 40, height: 40)
                                                       .foregroundColor(.yellow)
                                                       .padding(.bottom, 400.0)
                                                       .padding(.leading, 250.0)
+                                                      
                                             }
                                         
                                         
@@ -177,6 +183,8 @@ struct Tips: View {
             }
         }
     }
+    
+   
     
     func getScale(proxy: GeometryProxy) -> CGFloat{
         let midPoint: CGFloat = 125
