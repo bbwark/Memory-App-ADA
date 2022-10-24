@@ -48,17 +48,7 @@ struct SecondQuestion: Question {
                 Button {
                 } label: {
                     //Answer 1
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 300.0, height: 70.0)
-                            .foregroundColor(Color(hex: "EDEDED"))
-                            .cornerRadius(10)
-                            .shadow(radius: 6.0)
-                        Text(answer1)
-                            .foregroundColor(Color.black)
-                            .multilineTextAlignment(.center)
-                            .frame(width: 250.0, height: 50.0)
-                    }
+                    AnswerButton(textInBox: answer1)
                 }
                 .padding(.bottom)
                 
@@ -66,17 +56,7 @@ struct SecondQuestion: Question {
                 Button {
                 } label: {
                     //Answer 2
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 300.0, height: 70.0)
-                            .foregroundColor(Color(hex: "EDEDED"))
-                            .cornerRadius(10)
-                            .shadow(radius: 6.0)
-                        Text(answer2)
-                            .foregroundColor(Color.black)
-                            .multilineTextAlignment(.center)
-                            .frame(width: 250.0, height: 50.0)
-                    }
+                    AnswerButton(textInBox: answer2)
                 }
                 .padding(.bottom)
                 
@@ -84,17 +64,7 @@ struct SecondQuestion: Question {
                 Button {
                 } label: {
                     //Answer 3
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 300.0, height: 70.0)
-                            .foregroundColor(Color(hex: "EDEDED"))
-                            .cornerRadius(10)
-                            .shadow(radius: 6.0)
-                        Text(answer3)
-                            .foregroundColor(Color.black)
-                            .multilineTextAlignment(.center)
-                            .frame(width: 250.0, height: 50.0)
-                    }
+                    AnswerButton(textInBox: answer3)
                 }
                 .padding(.bottom)
                 
@@ -102,19 +72,8 @@ struct SecondQuestion: Question {
                 Button {
                 } label: {
                     //Answer 4
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 300.0, height: 70.0)
-                            .foregroundColor(Color(hex: "EDEDED"))
-                            .cornerRadius(10)
-                            .shadow(radius: 6.0)
-                        Text(answer4)
-                            .foregroundColor(Color.black)
-                            .multilineTextAlignment(.center)
-                            .frame(width: 250.0, height: 50.0)
-                    }
+                    AnswerButton(textInBox: answer4)
                 }
-                
             }
             Spacer()
         }
