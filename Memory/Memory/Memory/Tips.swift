@@ -17,13 +17,10 @@ struct Tips: View {
     
     var body: some View {
         VStack{
-            ZStack{
-                Text("Tips")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.leading)
-                    .bold()
-                    .padding(.trailing, 300.0)
+            
+                
+                Spacer()
+                    //.padding(.trailing, 300.0)
                 Button {
                 } label: {
                     HStack{
@@ -35,14 +32,11 @@ struct Tips: View {
                 .buttonBorderShape(.capsule)
                 .foregroundColor(.cyan)
                 .tint(.white)
-                
-                .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
+                .shadow(radius: 5)
                 .padding(.leading, 250.0)
+                Spacer()
 
-            }
+            
             Picker(selection: $selection, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
                 Text("All Tips").tag(1)
                 Text("Favourite Tips").tag(2)
@@ -104,7 +98,6 @@ struct Tips: View {
                                                       .foregroundColor(.yellow)
                                                       .padding(.bottom, 400.0)
                                                       .padding(.leading, 250.0)
-                                                      
                                             }
                                         
                                         
