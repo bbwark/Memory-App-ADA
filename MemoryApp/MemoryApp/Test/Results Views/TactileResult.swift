@@ -12,15 +12,17 @@ struct TactileResult: Result {
     var description: String = "Tactile memory is a type of sensory memory.\n\nIt consists in the ability to memorize practical and manual procedures and activities, creating mental images relating to the form and process of forming things."
     
     let subTitle:String = "Your Memory Type is:"
+    @State var pressed = false
     
     var body: some View {
         
         VStack{
-            Spacer()
+            
             
             Text(subTitle)
                 .font(.headline)
                 .multilineTextAlignment(.center)
+                .padding(.top, 20.0)
 
             
             Text(memoryType)
@@ -43,11 +45,15 @@ struct TactileResult: Result {
             
             Spacer()
             
+            NavigationLink(destination: Navigation(), isActive: $pressed) {EmptyView()}
+            
             HStack{
                 Spacer()
                 
                 VStack{
-                    Button {} label: {
+                    Button {
+                        pressed.toggle()
+                    } label: {
                         ZStack{
                             Circle()
                                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -68,7 +74,9 @@ struct TactileResult: Result {
                 Spacer()
                 
                 VStack{
-                    Button {} label: {
+                    Button {
+                        pressed.toggle()
+                    } label: {
                         ZStack{
                             Circle()
                                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -90,6 +98,8 @@ struct TactileResult: Result {
             }
             .padding(.bottom)
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationTitle("Test Result")
         .padding(.horizontal)
     }
 }

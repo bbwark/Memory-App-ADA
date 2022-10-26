@@ -11,39 +11,22 @@ struct Tips: View {
     @State var selection: Int = 1
     var symbol1 : String = "star"
     var symbol2 : String = ""
- 
-    
+    @State var presente: Bool = false
+    var cont: Int = 0
 
     
     var body: some View {
         VStack{
-            
-                
-                Spacer()
-                    //.padding(.trailing, 300.0)
-                Button {
-                } label: {
-                    HStack{
-                    Image(systemName: "doc.text.below.ecg")
-                    Text("Take Test")
-                    }
-                }
-                .buttonStyle(.borderedProminent)
-                .buttonBorderShape(.capsule)
-                .foregroundColor(.cyan)
-                .tint(.white)
-                .shadow(radius: 5)
-                .padding(.leading, 250.0)
-                Spacer()
-
-            
-            Picker(selection: $selection, label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
+        
+            Picker(selection: $selection, label: Text("Picker")) {
                 Text("All Tips").tag(1)
                 Text("Favourite Tips").tag(2)
             }
-            .frame(width: 380.0, height: 80.0)
+            .padding(.top, 40.0)
+            .padding(.horizontal)
+            .frame(width: 380.0, height: 50.0)
             .pickerStyle(.segmented)
-            //.padding(.bottom, 10.0)
+            
             Spacer()
             
             ScrollView(.horizontal, showsIndicators: false){
@@ -120,13 +103,13 @@ struct Tips: View {
                         } //End if selection
                     else {
                         ForEach(littleTip){num in
+                            
                             if num.starred == true{
-                                
                                 GeometryReader{ proxy in
                                     let scale = getScale(proxy: proxy)
                                     ZStack(alignment : .bottom){
                                         ZStack{
-                                            Image(num.Immagine)
+                                            Image(num.Immagine )
                                                 .resizable()
                                                 .scaledToFill()
                                                 .frame(width: 320, height: 460)
@@ -142,10 +125,12 @@ struct Tips: View {
                                                 .frame(width: 320, height: 460, alignment: .center)
                                                 .clipShape(RoundedRectangle(cornerRadius: 20.0))
                                             
+                                                
+                                            
                                         }
                                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                                         
-                                        Text(num.title)
+                                        Text(num.title )
                                             .font(.system(size: 32, weight: .semibold))
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(.white)
@@ -165,19 +150,31 @@ struct Tips: View {
                                 .padding(.horizontal, 32)
                                 .padding(.vertical, 48)
                             }// end controllo if starred
+                        
                             EmptyView()
                         } //end for
+                        
                         Spacer()
-                            .frame(width:48)
-                            
+                            .frame(width:80,height:100)
                     }//end else
                 }//end hstack
-                
+
             }
+            .padding(.bottom)
+            Spacer()
         }
     }
     
-   
+    func ruxo(){
+        
+        let cont = 0...6
+        for number in cont {
+            if littleTip[number].starred == true{
+                presente = true
+            }
+        }
+        
+    }
     
     func getScale(proxy: GeometryProxy) -> CGFloat{
         let midPoint: CGFloat = 125

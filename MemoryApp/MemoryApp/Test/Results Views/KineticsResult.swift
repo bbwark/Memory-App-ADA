@@ -12,15 +12,16 @@ struct KineticsResult: Result {
     var description: String = "Kinetic memory is linked to space and movement.\n\nIt consists in the ability to memorize through spatial perception, creating a spatial image of the things and information that are learned."
     
     let subTitle:String = "Your Memory Type is:"
+    @State var pressed = false
     
     var body: some View {
         
         VStack{
-            Spacer()
             
             Text(subTitle)
                 .font(.headline)
                 .multilineTextAlignment(.center)
+                .padding(.top, 20.0)
 
             
             Text(memoryType)
@@ -43,11 +44,15 @@ struct KineticsResult: Result {
             
             Spacer()
             
+            NavigationLink(destination: Navigation(), isActive: $pressed) {EmptyView()}
+            
             HStack{
                 Spacer()
                 
                 VStack{
-                    Button {} label: {
+                    Button {
+                        pressed.toggle()
+                    } label: {
                         ZStack{
                             Circle()
                                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -68,7 +73,9 @@ struct KineticsResult: Result {
                 Spacer()
                 
                 VStack{
-                    Button {} label: {
+                    Button {
+                        pressed.toggle()
+                    } label: {
                         ZStack{
                             Circle()
                                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -90,6 +97,8 @@ struct KineticsResult: Result {
             }
             .padding(.bottom)
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationTitle("Test Result")
         .padding(.horizontal)
     }
 }

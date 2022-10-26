@@ -12,15 +12,16 @@ struct AuditoryResult: Result {
     var description: String = "Auditory memory consists in the ability to memorize sounds, dialogues and more generally vocabulary and words. \n\nAnd above all to memorize through sound, its listening and its reproduction, creating mental images related to the perception of sounds and words."
     
     let subTitle:String = "Your Memory Type is:"
+    @State var pressed = false
     
     var body: some View {
         
         VStack{
-            Spacer()
             
             Text(subTitle)
                 .font(.headline)
                 .multilineTextAlignment(.center)
+                .padding(.top, 20.0)
 
             
             Text(memoryType)
@@ -43,11 +44,15 @@ struct AuditoryResult: Result {
             
             Spacer()
             
+            NavigationLink(destination: Navigation(), isActive: $pressed) {EmptyView()}
+            
             HStack{
                 Spacer()
                 
                 VStack{
-                    Button {} label: {
+                    Button {
+                        pressed.toggle()
+                    } label: {
                         ZStack{
                             Circle()
                                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -68,7 +73,9 @@ struct AuditoryResult: Result {
                 Spacer()
                 
                 VStack{
-                    Button {} label: {
+                    Button {
+                        pressed.toggle()
+                    } label: {
                         ZStack{
                             Circle()
                                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -90,6 +97,8 @@ struct AuditoryResult: Result {
             }
             .padding(.bottom)
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationTitle("Test Result")
         .padding(.horizontal)
     }
 }

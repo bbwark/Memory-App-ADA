@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct StartTestView: View {
-    @State private var fadeButton = false //Animation Variable
+    @State var resultSelector = 0
     
     var body: some View {
         VStack{
@@ -26,47 +26,17 @@ struct StartTestView: View {
             
             Spacer()
             
-            ZStack{
-                //Effect Circumference
-                Circle()
-                    .stroke(fadeButton ? Color(hex: "00D4D2") : Color(hex: "8415D4"), lineWidth: 4.0)
-                    .frame(width: 200.0, height: 200.0)
-                    .blur(radius: 2.0)
-                    .opacity(fadeButton ? 0.3 : 0.2)
-                    .scaleEffect(fadeButton ? 0.57 : 1.0)
-                
-                //Purple Circumference
-                Circle()
-                    .stroke(Color(hex: "8415D4"), lineWidth: 4.0)
-                    .frame(width: 200.0, height: 200.0)
-                    .blur(radius: 1.5)
-                
-                Button {
-                } label: {
-                    ZStack{
-                        //Cyan Circle
-                        Circle()
-                            .frame(width: 120.0, height: 120.0)
-                            .foregroundColor(Color(hex: "00D4D2"))
-                            .shadow(radius: 6.0)
-                        Text("Start")
-                            .font(.system(size: 28.0))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.white)
-                        
-                    }
-                }.onAppear{
-                    withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: false)){
-                        fadeButton.toggle()
-                    }
-                }
+            NavigationLink(destination: FirstQuestion(resultSelector: resultSelector)) {
+                StartTestButton()
             }
+            
             Spacer()
         }
+        .navigationTitle("Test")
     }
 }
-
-
+    
+    
 struct StartTestView_Previews: PreviewProvider {
     static var previews: some View {
         StartTestView()

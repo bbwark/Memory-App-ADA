@@ -15,8 +15,10 @@ struct FirstQuestion: Question {
     var answer3: String = "Repeat the things to buy aloud"
     var answer4: String = "Make a virtual list using your fingers to count"
     
+    @State var resultSelector:Int
+    @State var pressed = false
+    
     var body: some View {
-        
         VStack{
             Spacer()
             
@@ -43,9 +45,13 @@ struct FirstQuestion: Question {
             }
             .padding(.bottom)
             
+            
+            NavigationLink(destination: SecondQuestion(resultSelector: resultSelector), isActive: $pressed) {EmptyView()}
             VStack{
                 
                 Button {
+                    resultSelector += 1
+                    pressed.toggle()
                 } label: {
                     //Answer 1
                     AnswerButton(textInBox: answer1)
@@ -54,6 +60,8 @@ struct FirstQuestion: Question {
                 
                 
                 Button {
+                    resultSelector += 2
+                    pressed.toggle()
                 } label: {
                     //Answer 2
                     AnswerButton(textInBox: answer2)
@@ -62,6 +70,8 @@ struct FirstQuestion: Question {
                 
                 
                 Button {
+                    resultSelector += 3
+                    pressed.toggle()
                 } label: {
                     //Answer 3
                     AnswerButton(textInBox: answer3)
@@ -70,20 +80,22 @@ struct FirstQuestion: Question {
                 
                 
                 Button {
+                    resultSelector += 4
+                    pressed.toggle()
                 } label: {
                     //Answer 4
-                    AnswerButton(textInBox: answer3)
+                    AnswerButton(textInBox: answer4)
                 }
-                
             }
             Spacer()
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 
 struct FirstQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        FirstQuestion()
+        FirstQuestion(resultSelector: 0)
     }
 }

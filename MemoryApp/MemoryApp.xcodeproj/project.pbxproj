@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1555710D2908152C006A8A5A /* StartTestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555710C2908152C006A8A5A /* StartTestButton.swift */; };
+		1590D4C329080A5200FC4864 /* TakeTestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1590D4C229080A5200FC4864 /* TakeTestButton.swift */; };
 		15AA68C22906E1E700BD3CE6 /* MemoryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA68C12906E1E700BD3CE6 /* MemoryAppApp.swift */; };
-		15AA68C42906E1E700BD3CE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA68C32906E1E700BD3CE6 /* ContentView.swift */; };
+		15AA68C42906E1E700BD3CE6 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA68C32906E1E700BD3CE6 /* Navigation.swift */; };
 		15AA68C62906E1E800BD3CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AA68C52906E1E800BD3CE6 /* Assets.xcassets */; };
 		15AA68C92906E1E800BD3CE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AA68C82906E1E800BD3CE6 /* Preview Assets.xcassets */; };
 		15AA68D22906E21800BD3CE6 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA68CF2906E21800BD3CE6 /* Games.swift */; };
+		15B173E5290847F3004A9DF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B173E4290847F3004A9DF6 /* ContentView.swift */; };
 		15EAF8302906E2DC00FBC0D2 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF81C2906E2DC00FBC0D2 /* Tips.swift */; };
 		15EAF8322906E2DC00FBC0D2 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF81E2906E2DC00FBC0D2 /* ResultProtocol.swift */; };
 		15EAF8342906E2DC00FBC0D2 /* AuditoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8202906E2DC00FBC0D2 /* AuditoryResult.swift */; };
@@ -22,7 +25,7 @@
 		15EAF83C2906E2DC00FBC0D2 /* SecondQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8282906E2DC00FBC0D2 /* SecondQuestion.swift */; };
 		15EAF83D2906E2DC00FBC0D2 /* TactileResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8292906E2DC00FBC0D2 /* TactileResult.swift */; };
 		15EAF83E2906E2DC00FBC0D2 /* ThirdQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF82A2906E2DC00FBC0D2 /* ThirdQuestion.swift */; };
-		15EAF83F2906E2DC00FBC0D2 /* VisuallyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF82B2906E2DC00FBC0D2 /* VisuallyResult.swift */; };
+		15EAF83F2906E2DC00FBC0D2 /* VisualResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF82B2906E2DC00FBC0D2 /* VisualResult.swift */; };
 		15EAF8412906E2DC00FBC0D2 /* StartTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF82D2906E2DC00FBC0D2 /* StartTestView.swift */; };
 		15EAF8422906E2DC00FBC0D2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF82E2906E2DC00FBC0D2 /* Model.swift */; };
 		15EAF8432906E2DC00FBC0D2 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF82F2906E2DC00FBC0D2 /* AnswerButton.swift */; };
@@ -30,12 +33,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1555710C2908152C006A8A5A /* StartTestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTestButton.swift; sourceTree = "<group>"; };
+		1590D4C229080A5200FC4864 /* TakeTestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTestButton.swift; sourceTree = "<group>"; };
 		15AA68BE2906E1E700BD3CE6 /* MemoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AA68C12906E1E700BD3CE6 /* MemoryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryAppApp.swift; sourceTree = "<group>"; };
-		15AA68C32906E1E700BD3CE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15AA68C32906E1E700BD3CE6 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		15AA68C52906E1E800BD3CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15AA68C82906E1E800BD3CE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15AA68CF2906E21800BD3CE6 /* Games.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		15B173E4290847F3004A9DF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15EAF81C2906E2DC00FBC0D2 /* Tips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		15EAF81E2906E2DC00FBC0D2 /* ResultProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
 		15EAF8202906E2DC00FBC0D2 /* AuditoryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditoryResult.swift; sourceTree = "<group>"; };
@@ -46,7 +52,7 @@
 		15EAF8282906E2DC00FBC0D2 /* SecondQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondQuestion.swift; sourceTree = "<group>"; };
 		15EAF8292906E2DC00FBC0D2 /* TactileResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TactileResult.swift; sourceTree = "<group>"; };
 		15EAF82A2906E2DC00FBC0D2 /* ThirdQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdQuestion.swift; sourceTree = "<group>"; };
-		15EAF82B2906E2DC00FBC0D2 /* VisuallyResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisuallyResult.swift; sourceTree = "<group>"; };
+		15EAF82B2906E2DC00FBC0D2 /* VisualResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualResult.swift; sourceTree = "<group>"; };
 		15EAF82D2906E2DC00FBC0D2 /* StartTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartTestView.swift; sourceTree = "<group>"; };
 		15EAF82E2906E2DC00FBC0D2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		15EAF82F2906E2DC00FBC0D2 /* AnswerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
@@ -83,12 +89,12 @@
 		15AA68C02906E1E700BD3CE6 /* MemoryApp */ = {
 			isa = PBXGroup;
 			children = (
-				15EAF8492906E5BF00FBC0D2 /* ColorHexPicker.swift */,
+				15AA68C12906E1E700BD3CE6 /* MemoryAppApp.swift */,
+				15B173E4290847F3004A9DF6 /* ContentView.swift */,
 				15EAF8482906E3A600FBC0D2 /* Test */,
 				15EAF8452906E33E00FBC0D2 /* Navigation */,
+				15EAF8492906E5BF00FBC0D2 /* ColorHexPicker.swift */,
 				15EAF82E2906E2DC00FBC0D2 /* Model.swift */,
-				15AA68C12906E1E700BD3CE6 /* MemoryAppApp.swift */,
-				15AA68C32906E1E700BD3CE6 /* ContentView.swift */,
 				15AA68C52906E1E800BD3CE6 /* Assets.xcassets */,
 				15AA68C72906E1E800BD3CE6 /* Preview Content */,
 			);
@@ -119,8 +125,10 @@
 		15EAF8452906E33E00FBC0D2 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				1590D4C229080A5200FC4864 /* TakeTestButton.swift */,
 				15EAF81C2906E2DC00FBC0D2 /* Tips.swift */,
 				15AA68CF2906E21800BD3CE6 /* Games.swift */,
+				15AA68C32906E1E700BD3CE6 /* Navigation.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -132,7 +140,7 @@
 				15EAF81E2906E2DC00FBC0D2 /* ResultProtocol.swift */,
 				15EAF8262906E2DC00FBC0D2 /* KineticsResult.swift */,
 				15EAF8292906E2DC00FBC0D2 /* TactileResult.swift */,
-				15EAF82B2906E2DC00FBC0D2 /* VisuallyResult.swift */,
+				15EAF82B2906E2DC00FBC0D2 /* VisualResult.swift */,
 			);
 			path = "Results Views";
 			sourceTree = "<group>";
@@ -140,6 +148,7 @@
 		15EAF8482906E3A600FBC0D2 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				1555710C2908152C006A8A5A /* StartTestButton.swift */,
 				15EAF82D2906E2DC00FBC0D2 /* StartTestView.swift */,
 				15EAF8442906E2FA00FBC0D2 /* Questions Views */,
 				15EAF8462906E34500FBC0D2 /* Results Views */,
@@ -219,17 +228,20 @@
 			files = (
 				15EAF8412906E2DC00FBC0D2 /* StartTestView.swift in Sources */,
 				15EAF8322906E2DC00FBC0D2 /* ResultProtocol.swift in Sources */,
+				15B173E5290847F3004A9DF6 /* ContentView.swift in Sources */,
 				15EAF83D2906E2DC00FBC0D2 /* TactileResult.swift in Sources */,
 				15EAF8392906E2DC00FBC0D2 /* QuestionProtocol.swift in Sources */,
+				1590D4C329080A5200FC4864 /* TakeTestButton.swift in Sources */,
 				15AA68D22906E21800BD3CE6 /* Games.swift in Sources */,
-				15AA68C42906E1E700BD3CE6 /* ContentView.swift in Sources */,
+				1555710D2908152C006A8A5A /* StartTestButton.swift in Sources */,
+				15AA68C42906E1E700BD3CE6 /* Navigation.swift in Sources */,
 				15EAF8432906E2DC00FBC0D2 /* AnswerButton.swift in Sources */,
 				15EAF83A2906E2DC00FBC0D2 /* KineticsResult.swift in Sources */,
 				15AA68C22906E1E700BD3CE6 /* MemoryAppApp.swift in Sources */,
 				15EAF83C2906E2DC00FBC0D2 /* SecondQuestion.swift in Sources */,
 				15EAF83B2906E2DC00FBC0D2 /* FirstQuestion.swift in Sources */,
 				15EAF8422906E2DC00FBC0D2 /* Model.swift in Sources */,
-				15EAF83F2906E2DC00FBC0D2 /* VisuallyResult.swift in Sources */,
+				15EAF83F2906E2DC00FBC0D2 /* VisualResult.swift in Sources */,
 				15EAF8382906E2DC00FBC0D2 /* FourthQuestion.swift in Sources */,
 				15EAF8302906E2DC00FBC0D2 /* Tips.swift in Sources */,
 				15EAF83E2906E2DC00FBC0D2 /* ThirdQuestion.swift in Sources */,
@@ -363,6 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryApp/Preview Content\"";
+				DEVELOPMENT_TEAM = TK83CG584J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -391,6 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryApp/Preview Content\"";
+				DEVELOPMENT_TEAM = TK83CG584J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

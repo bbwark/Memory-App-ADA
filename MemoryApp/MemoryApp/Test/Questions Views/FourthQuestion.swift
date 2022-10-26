@@ -15,6 +15,9 @@ struct FourthQuestion: Question {
     var answer3: String = "I note the various steps"
     var answer4: String = "I repeat in mind"
     
+    @State var resultSelector:Int
+    @State var pressed = false
+    
     var body: some View {
         
         VStack{
@@ -43,9 +46,13 @@ struct FourthQuestion: Question {
             }
             .padding(.bottom)
             
+            
+            
             VStack{
                 
                 Button {
+                    resultSelector += 4
+                    pressed.toggle()
                 } label: {
                     //Answer 1
                     AnswerButton(textInBox: answer1)
@@ -54,6 +61,8 @@ struct FourthQuestion: Question {
                 
                 
                 Button {
+                    resultSelector += 3
+                    pressed.toggle()
                 } label: {
                     //Answer 2
                     AnswerButton(textInBox: answer2)
@@ -62,6 +71,8 @@ struct FourthQuestion: Question {
                 
                 
                 Button {
+                    resultSelector += 2
+                    pressed.toggle()
                 } label: {
                     //Answer 3
                     AnswerButton(textInBox: answer3)
@@ -69,6 +80,8 @@ struct FourthQuestion: Question {
                 .padding(.bottom)
                 
                 Button {
+                    resultSelector += 1
+                    pressed.toggle()
                 } label: {
                     //Answer 4
                     AnswerButton(textInBox: answer4)
@@ -76,13 +89,27 @@ struct FourthQuestion: Question {
             }
             .padding(.bottom, 34.0)
             Spacer()
+            
+            if(resultSelector >= 4 && resultSelector <= 6){
+                NavigationLink(destination: TactileResult(), isActive: $pressed) {EmptyView()}
+            }
+            else if(resultSelector >= 7 && resultSelector <= 9){
+                NavigationLink(destination: VisualResult(), isActive: $pressed) {EmptyView()}
+            }
+            else if(resultSelector >= 10 && resultSelector <= 12){
+                NavigationLink(destination: AuditoryResult(), isActive: $pressed) {EmptyView()}
+            }
+            else if(resultSelector >= 13){
+                NavigationLink(destination: KineticsResult(), isActive: $pressed) {EmptyView()}
+            }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 
 struct FourthQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        FourthQuestion()
+        FourthQuestion(resultSelector: 0)
     }
 }

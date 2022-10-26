@@ -15,6 +15,9 @@ struct SecondQuestion: Question {
     var answer3: String = "Read aloud"
     var answer4: String = "Walking"
     
+    @State var resultSelector:Int
+    @State var pressed = false
+    
     var body: some View {
         
         VStack{
@@ -43,9 +46,13 @@ struct SecondQuestion: Question {
             }
             .padding(.bottom)
             
+            NavigationLink(destination: ThirdQuestion(resultSelector: resultSelector), isActive: $pressed) {EmptyView()}
+            
             VStack{
                 
                 Button {
+                    resultSelector += 2
+                    pressed.toggle()
                 } label: {
                     //Answer 1
                     AnswerButton(textInBox: answer1)
@@ -54,6 +61,8 @@ struct SecondQuestion: Question {
                 
                 
                 Button {
+                    resultSelector += 1
+                    pressed.toggle()
                 } label: {
                     //Answer 2
                     AnswerButton(textInBox: answer2)
@@ -62,6 +71,8 @@ struct SecondQuestion: Question {
                 
                 
                 Button {
+                    resultSelector += 3
+                    pressed.toggle()
                 } label: {
                     //Answer 3
                     AnswerButton(textInBox: answer3)
@@ -70,6 +81,8 @@ struct SecondQuestion: Question {
                 
                 
                 Button {
+                    resultSelector += 4
+                    pressed.toggle()
                 } label: {
                     //Answer 4
                     AnswerButton(textInBox: answer4)
@@ -77,12 +90,13 @@ struct SecondQuestion: Question {
             }
             Spacer()
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 
 struct SecondQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        SecondQuestion()
+        SecondQuestion(resultSelector: 0)
     }
 }

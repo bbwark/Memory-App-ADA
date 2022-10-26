@@ -6,21 +6,22 @@
 //
 import SwiftUI
 
-struct VisuallyResult: Result {
-    var memoryType: String = "VISUALLY"
+struct VisualResult: Result {
+    var memoryType: String = "VISUAL"
     var memoryImage: String = "eyes"
     var description: String = "Visual (or photographic) memory consists of the ability to create a mental image after seeing a real image or object. \n\nThe mental image replaces the real one and represents the information stored by the brain from which other information can be derived."
     
     let subTitle:String = "Your Memory Type is:"
+    @State var pressed = false
     
     var body: some View {
         
         VStack{
-            Spacer()
             
             Text(subTitle)
                 .font(.headline)
                 .multilineTextAlignment(.center)
+                .padding(.top, 20.0)
 
             
             Text(memoryType)
@@ -43,11 +44,15 @@ struct VisuallyResult: Result {
             
             Spacer()
             
+            NavigationLink(destination: Navigation(), isActive: $pressed) {EmptyView()}
+            
             HStack{
                 Spacer()
                 
                 VStack{
-                    Button {} label: {
+                    Button {
+                        pressed.toggle()
+                    } label: {
                         ZStack{
                             Circle()
                                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -68,7 +73,9 @@ struct VisuallyResult: Result {
                 Spacer()
                 
                 VStack{
-                    Button {} label: {
+                    Button {
+                        pressed.toggle()
+                    } label: {
                         ZStack{
                             Circle()
                                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
@@ -90,12 +97,14 @@ struct VisuallyResult: Result {
             }
             .padding(.bottom)
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationTitle("Test Result")
         .padding(.horizontal)
     }
 }
 
-struct VisuallyResult_Previews: PreviewProvider {
+struct VisualResult_Previews: PreviewProvider {
     static var previews: some View {
-        VisuallyResult()
+        VisualResult()
     }
 }

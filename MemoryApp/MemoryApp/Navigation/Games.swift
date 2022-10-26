@@ -37,26 +37,21 @@ struct Games: View {
                                         .frame(width: 320, height: 460, alignment: .center)
                                         .clipShape(RoundedRectangle(cornerRadius: 20.0))
                                     
+                                    VStack{
+                                        Spacer()
+                                        
+                                        Text(num.title)
+                                            .font(.system(size: 32, weight: .semibold))
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(.white)
+                                            .padding(.bottom, 30.0)
+                                    }
                                 }
                                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-                                
-                                Text(num.title)
-                                    .font(.system(size: 32, weight: .semibold))
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(.white)
-                                    .padding(.bottom)
-                                
-                            
-                                
                             }
-                            
-                            
-                            
-                            
                             .scaleEffect(.init(width: scale, height: scale))
-                            //                            .animation(.spring(), value: 1)
                             .animation(.easeOut(duration: 1))
-                            .padding(.vertical)
+                            .padding(.bottom)
                             
                         } // end Geometry
                         .frame(width: 230, height: 500)
@@ -69,24 +64,24 @@ struct Games: View {
             }//End ScrollView
         }
     }
-    
-    func getScale(proxy: GeometryProxy) -> CGFloat{
-        let midPoint: CGFloat = 125
         
-        let viewFrame = proxy.frame(in: CoordinateSpace.global)
-        
-        var scale: CGFloat = 1.0
-        let deltaXAnimationThreshold: CGFloat = 125
-        
-        let diffFromCenter = abs(midPoint - viewFrame.origin.x - deltaXAnimationThreshold / 2)
-        if diffFromCenter < deltaXAnimationThreshold{
-            scale = 1 + (deltaXAnimationThreshold - diffFromCenter) / 500
+        func getScale(proxy: GeometryProxy) -> CGFloat{
+            let midPoint: CGFloat = 125
+            
+            let viewFrame = proxy.frame(in: CoordinateSpace.global)
+            
+            var scale: CGFloat = 1.0
+            let deltaXAnimationThreshold: CGFloat = 125
+            
+            let diffFromCenter = abs(midPoint - viewFrame.origin.x - deltaXAnimationThreshold / 2)
+            if diffFromCenter < deltaXAnimationThreshold{
+                scale = 1 + (deltaXAnimationThreshold - diffFromCenter) / 500
+            }
+            
+            return scale
         }
-        
-        return scale
     }
-}
-
+    
 struct Games_Previews: PreviewProvider {
     static var previews: some View {
         Games()

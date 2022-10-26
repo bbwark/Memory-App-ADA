@@ -19,11 +19,11 @@ struct MyTip : Identifiable{
 }
 
  var littleTip = [MyTip(id: 1, title: "An incredible visual memory exercise: Can you tell me what color an orange is without using the word “orange”?", Immagine: "1",starred: false),
-    MyTip(id: 2, title: "The most effective visual memory exercises is Memory Palace Tecnique", Immagine: "2", starred: true),
+    MyTip(id: 2, title: "The most effective visual memory exercises is Memory Palace Tecnique", Immagine: "2", starred: false),
     MyTip(id: 3, title: "Flashcards can be a very effective bar exam study tool", Immagine: "3",starred: false),
     MyTip(id: 4, title: "Visual learners learn by seeing and absorbing what is written in front of them", Immagine: "4",starred: false),
-    MyTip(id: 5, title: "Keeping a dream journal is a powerful way to exercise your visual memory", Immagine: "5",starred: true),
-    MyTip(id: 6, title: "Visual learners learn by seeing and absorbing what is written in front of them", Immagine: "6", starred: true)
+    MyTip(id: 5, title: "Keeping a dream journal is a powerful way to exercise your visual memory", Immagine: "5",starred: false),
+    MyTip(id: 6, title: "Visual learners learn by seeing and absorbing what is written in front of them", Immagine: "6", starred: false)
 
 ]
 
