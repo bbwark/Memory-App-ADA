@@ -100,7 +100,7 @@ struct FourthQuestion: Question {
                 NavigationLink(destination: AuditoryResult(), isActive: $pressed) {EmptyView()}
             }
             else if(resultSelector >= 13){
-                NavigationLink(destination: KineticsResult(), isActive: $pressed) {EmptyView()}
+                NavigationLink(destination: KineticResult(), isActive: $pressed) {EmptyView()}
             }
         }
         .navigationBarBackButtonHidden(true)

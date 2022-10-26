@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct KineticsResult: Result {
+struct KineticResult: Result {
     var memoryType: String = "KINETIC"
     var memoryImage: String = "hand.draw"
     var description: String = "Kinetic memory is linked to space and movement.\n\nIt consists in the ability to memorize through spatial perception, creating a spatial image of the things and information that are learned."
@@ -103,8 +103,8 @@ struct KineticsResult: Result {
     }
 }
 
-struct KineticsResult_Previews: PreviewProvider {
+struct KineticResult_Previews: PreviewProvider {
     static var previews: some View {
-        KineticsResult()
+        KineticResult()
     }
 }

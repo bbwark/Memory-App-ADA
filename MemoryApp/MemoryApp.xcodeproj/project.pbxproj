@@ -20,7 +20,7 @@
 		15EAF8342906E2DC00FBC0D2 /* AuditoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8202906E2DC00FBC0D2 /* AuditoryResult.swift */; };
 		15EAF8382906E2DC00FBC0D2 /* FourthQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8242906E2DC00FBC0D2 /* FourthQuestion.swift */; };
 		15EAF8392906E2DC00FBC0D2 /* QuestionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8252906E2DC00FBC0D2 /* QuestionProtocol.swift */; };
-		15EAF83A2906E2DC00FBC0D2 /* KineticsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8262906E2DC00FBC0D2 /* KineticsResult.swift */; };
+		15EAF83A2906E2DC00FBC0D2 /* KineticResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8262906E2DC00FBC0D2 /* KineticResult.swift */; };
 		15EAF83B2906E2DC00FBC0D2 /* FirstQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8272906E2DC00FBC0D2 /* FirstQuestion.swift */; };
 		15EAF83C2906E2DC00FBC0D2 /* SecondQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8282906E2DC00FBC0D2 /* SecondQuestion.swift */; };
 		15EAF83D2906E2DC00FBC0D2 /* TactileResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8292906E2DC00FBC0D2 /* TactileResult.swift */; };
@@ -47,7 +47,7 @@
 		15EAF8202906E2DC00FBC0D2 /* AuditoryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditoryResult.swift; sourceTree = "<group>"; };
 		15EAF8242906E2DC00FBC0D2 /* FourthQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthQuestion.swift; sourceTree = "<group>"; };
 		15EAF8252906E2DC00FBC0D2 /* QuestionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionProtocol.swift; sourceTree = "<group>"; };
-		15EAF8262906E2DC00FBC0D2 /* KineticsResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KineticsResult.swift; sourceTree = "<group>"; };
+		15EAF8262906E2DC00FBC0D2 /* KineticResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KineticResult.swift; sourceTree = "<group>"; };
 		15EAF8272906E2DC00FBC0D2 /* FirstQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstQuestion.swift; sourceTree = "<group>"; };
 		15EAF8282906E2DC00FBC0D2 /* SecondQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondQuestion.swift; sourceTree = "<group>"; };
 		15EAF8292906E2DC00FBC0D2 /* TactileResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TactileResult.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			children = (
 				15EAF8202906E2DC00FBC0D2 /* AuditoryResult.swift */,
 				15EAF81E2906E2DC00FBC0D2 /* ResultProtocol.swift */,
-				15EAF8262906E2DC00FBC0D2 /* KineticsResult.swift */,
+				15EAF8262906E2DC00FBC0D2 /* KineticResult.swift */,
 				15EAF8292906E2DC00FBC0D2 /* TactileResult.swift */,
 				15EAF82B2906E2DC00FBC0D2 /* VisualResult.swift */,
 			);
@@ -236,7 +236,7 @@
 				1555710D2908152C006A8A5A /* StartTestButton.swift in Sources */,
 				15AA68C42906E1E700BD3CE6 /* Navigation.swift in Sources */,
 				15EAF8432906E2DC00FBC0D2 /* AnswerButton.swift in Sources */,
-				15EAF83A2906E2DC00FBC0D2 /* KineticsResult.swift in Sources */,
+				15EAF83A2906E2DC00FBC0D2 /* KineticResult.swift in Sources */,
 				15AA68C22906E1E700BD3CE6 /* MemoryAppApp.swift in Sources */,
 				15EAF83C2906E2DC00FBC0D2 /* SecondQuestion.swift in Sources */,
 				15EAF83B2906E2DC00FBC0D2 /* FirstQuestion.swift in Sources */,
