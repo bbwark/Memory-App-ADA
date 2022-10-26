@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct KineticsResult: Result {
-    var memoryType: String = "KINETICS"
+    var memoryType: String = "KINETIC"
     var memoryImage: String = "hand.draw"
     var description: String = "Kinetic memory is linked to space and movement.\n\nIt consists in the ability to memorize through spatial perception, creating a spatial image of the things and information that are learned."
     
