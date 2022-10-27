@@ -26,6 +26,7 @@ struct Navigation: View {
                 }.tag(2)
             
         }
+        .accentColor(Color(hex: "00D4D2"))
         .navigationTitle(selection == 1 ? "Games" : "Tips")
         .toolbar{
             NavigationLink(destination: StartTestView()) {

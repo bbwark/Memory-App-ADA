@@ -30,12 +30,13 @@
 		15EAF8422906E2DC00FBC0D2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF82E2906E2DC00FBC0D2 /* Model.swift */; };
 		15EAF8432906E2DC00FBC0D2 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF82F2906E2DC00FBC0D2 /* AnswerButton.swift */; };
 		15EAF84A2906E5BF00FBC0D2 /* ColorHexPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EAF8492906E5BF00FBC0D2 /* ColorHexPicker.swift */; };
+		9EAE1C93290AA8730061CFFE /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1C92290AA8730061CFFE /* Rectangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1555710C2908152C006A8A5A /* StartTestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTestButton.swift; sourceTree = "<group>"; };
 		1590D4C229080A5200FC4864 /* TakeTestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTestButton.swift; sourceTree = "<group>"; };
-		15AA68BE2906E1E700BD3CE6 /* MemoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15AA68BE2906E1E700BD3CE6 /* MemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AA68C12906E1E700BD3CE6 /* MemoryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryAppApp.swift; sourceTree = "<group>"; };
 		15AA68C32906E1E700BD3CE6 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		15AA68C52906E1E800BD3CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		15EAF82E2906E2DC00FBC0D2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		15EAF82F2906E2DC00FBC0D2 /* AnswerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		15EAF8492906E5BF00FBC0D2 /* ColorHexPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHexPicker.swift; sourceTree = "<group>"; };
+		9EAE1C92290AA8730061CFFE /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,7 @@
 		15AA68BF2906E1E700BD3CE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15AA68BE2906E1E700BD3CE6 /* MemoryApp.app */,
+				15AA68BE2906E1E700BD3CE6 /* MemoTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +131,7 @@
 				15EAF81C2906E2DC00FBC0D2 /* Tips.swift */,
 				15AA68CF2906E21800BD3CE6 /* Games.swift */,
 				15AA68C32906E1E700BD3CE6 /* Navigation.swift */,
+				9EAE1C92290AA8730061CFFE /* Rectangle.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -159,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		15AA68BD2906E1E700BD3CE6 /* MemoryApp */ = {
+		15AA68BD2906E1E700BD3CE6 /* MemoTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15AA68CC2906E1E800BD3CE6 /* Build configuration list for PBXNativeTarget "MemoryApp" */;
+			buildConfigurationList = 15AA68CC2906E1E800BD3CE6 /* Build configuration list for PBXNativeTarget "MemoTest" */;
 			buildPhases = (
 				15AA68BA2906E1E700BD3CE6 /* Sources */,
 				15AA68BB2906E1E700BD3CE6 /* Frameworks */,
@@ -171,9 +174,9 @@
 			);
 			dependencies = (
 			);
-			name = MemoryApp;
+			name = MemoTest;
 			productName = MemoryApp;
-			productReference = 15AA68BE2906E1E700BD3CE6 /* MemoryApp.app */;
+			productReference = 15AA68BE2906E1E700BD3CE6 /* MemoTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 15AA68B92906E1E700BD3CE6 /* Build configuration list for PBXProject "MemoryApp" */;
+			buildConfigurationList = 15AA68B92906E1E700BD3CE6 /* Build configuration list for PBXProject "MemoTest" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +207,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15AA68BD2906E1E700BD3CE6 /* MemoryApp */,
+				15AA68BD2906E1E700BD3CE6 /* MemoTest */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +232,7 @@
 				15EAF8412906E2DC00FBC0D2 /* StartTestView.swift in Sources */,
 				15EAF8322906E2DC00FBC0D2 /* ResultProtocol.swift in Sources */,
 				15B173E5290847F3004A9DF6 /* ContentView.swift in Sources */,
+				9EAE1C93290AA8730061CFFE /* Rectangle.swift in Sources */,
 				15EAF83D2906E2DC00FBC0D2 /* TactileResult.swift in Sources */,
 				15EAF8392906E2DC00FBC0D2 /* QuestionProtocol.swift in Sources */,
 				1590D4C329080A5200FC4864 /* TakeTestButton.swift in Sources */,
@@ -428,7 +432,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15AA68B92906E1E700BD3CE6 /* Build configuration list for PBXProject "MemoryApp" */ = {
+		15AA68B92906E1E700BD3CE6 /* Build configuration list for PBXProject "MemoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15AA68CA2906E1E800BD3CE6 /* Debug */,
@@ -437,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15AA68CC2906E1E800BD3CE6 /* Build configuration list for PBXNativeTarget "MemoryApp" */ = {
+		15AA68CC2906E1E800BD3CE6 /* Build configuration list for PBXNativeTarget "MemoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15AA68CD2906E1E800BD3CE6 /* Debug */,
