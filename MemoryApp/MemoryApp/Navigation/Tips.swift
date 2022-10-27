@@ -13,11 +13,12 @@ struct Tips: View {
     var symbol2 : String = ""
     @State var presente: Bool = false
     var cont: Int = 0
-
+    var def = UserDefaults.standard
     
+
     var body: some View {
         VStack{
-        
+         
             Picker(selection: $selection, label: Text("Picker")) {
                 Text("All Tips").tag(1)
                 Text("Favourite Tips").tag(2)
@@ -28,7 +29,6 @@ struct Tips: View {
             .pickerStyle(.segmented)
             
             Spacer()
-            
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 63){
                     
@@ -54,9 +54,8 @@ struct Tips: View {
                                                 .background(LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom))
                                                 .frame(width: 320, height: 460, alignment: .center)
                                                 .clipShape(RoundedRectangle(cornerRadius: 20.0))
-                                                .onTapGesture{
-                                                    
-                                                }
+                                                
+                                               
                                             
                                         }
                                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
@@ -70,12 +69,13 @@ struct Tips: View {
                                      
                                             Button(action: {
                                                 littleTip[num.id-1].starred = !littleTip[num.id-1].starred
+                                                def.set(!num.starred, forKey: num.title)
                                                 selection = 2
                                                 selection = 1
                                             }) {
                                                 
 
-                                                Image(systemName: littleTip[num.id-1].starred == true ? "star.fill" : "star")
+                                                Image(systemName: def.bool(forKey: num.title) == true ? "star.fill" : "star")
                                                       .resizable()
                                                       .frame(width: 40, height: 40)
                                                       .foregroundColor(.yellow)
@@ -104,7 +104,7 @@ struct Tips: View {
                     else {
                         ForEach(littleTip){num in
                             
-                            if num.starred == true{
+                            if def.bool(forKey: num.title) == true{
                                 GeometryReader{ proxy in
                                     let scale = getScale(proxy: proxy)
                                     ZStack(alignment : .bottom){
