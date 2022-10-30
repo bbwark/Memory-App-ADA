@@ -60,12 +60,12 @@ struct Tips: View {
                                                     .stroke(Color(white: 0.4))            )
                                                 .shadow(radius: 8)
                                             
-                                            RectangleTip()
+                                            //RectangleTip()
                                         
                                         }
                                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                                         
-                                        Text(num.title)
+                                        Text("")
                                             .font(.system(size: 32, weight: .semibold))
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(.white)
@@ -119,12 +119,12 @@ struct Tips: View {
                                                     .stroke(Color(white: 0.4))            )
                                                 .shadow(radius: 8)
                                             
-                                            RectangleTip()
+                                            //RectangleTip()
                                             
                                         } //end zstack2 included
                                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                                         
-                                        Text(num.title )
+                                        Text("")
                                             .font(.system(size: 32, weight: .semibold))
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(.white)

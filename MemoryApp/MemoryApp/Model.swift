@@ -23,13 +23,15 @@ struct MyTip : Identifiable{
     MyTip(id: 3, title: "Flashcards can be a very effective bar exam study tool", Immagine: "3",starred: false),
     MyTip(id: 4, title: "Visual learners learn by seeing and absorbing what is written in front of them", Immagine: "4",starred: false),
     MyTip(id: 5, title: "Keeping a dream journal is a powerful way to exercise your visual memory", Immagine: "5",starred: false),
-    MyTip(id: 6, title: "Visual learners learn by seeing and absorbing what is written in front of them", Immagine: "6", starred: false)
-
+                  MyTip(id: 6, title: "Visual jleizirudhglzuhtlsixfgth", Immagine: "6", starred: false),
+    MyTip(id: 7, title: "Visual learners asdkjhadfkfjhsfghskgdvg", Immagine: "7", starred: false),
+    MyTip(id: 8, title: "Visual aifgdwsoaefhosrufbvhbdnnxfkghieishclnznlngsrvehscojlzf8986", Immagine: "8", starred: false),
+    MyTip(id: 9, title: "Visual learners learn by sjhidf745t39yfhw37h9sfo48fh95e8885efho5", Immagine: "9", starred: false)
 ]
 
-var gameCard = [MyTip(id: 1, title: "Memorize Brains", Immagine: "5",starred: false),
-    MyTip(id: 2, title: "Simon", Immagine: "6",starred: false),
-    MyTip(id: 3, title: "Boh Game", Immagine: "7",starred: false),
+var gameCard = [MyTip(id: 1, title: "Memorize Brains", Immagine: "",starred: false),
+    MyTip(id: 2, title: "Simon", Immagine: "",starred: false),
+    MyTip(id: 3, title: "Boh Game", Immagine: "",starred: false),
 ]
 
 class Tip: ObservableObject{
