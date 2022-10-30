@@ -14,8 +14,6 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            
-            
             if defaults.bool(forKey: "First Launch") == true {
                 Navigation()
             }
@@ -26,6 +24,8 @@ struct ContentView: View {
                     }
             }
         }
+        .accentColor(Color(hex: "00D4D2"))
+
     }
     
     struct ContentView_Previews: PreviewProvider {

@@ -24,7 +24,6 @@ struct StartTestButton: View {
             Circle()
                 .stroke(Color(hex: "8415D4"), lineWidth: 4.0)
                 .frame(width: 200.0, height: 200.0)
-                .blur(radius: 1.5)
             ZStack{
                 //Cyan Circle
                 Circle()
