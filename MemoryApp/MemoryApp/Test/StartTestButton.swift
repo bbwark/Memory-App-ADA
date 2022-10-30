@@ -14,29 +14,25 @@ struct StartTestButton: View {
         ZStack(){
             //Effect Circumference
             Circle()
-                .stroke(fadeButton ? Color(hex: "00D4D2") : Color(hex: "8415D4"), lineWidth: 4.0)
-                .frame(width: 200.0, height: 200.0)
+                .stroke(Color(hex: "00D4D2"), lineWidth: 3.0)
+                .frame(width: 145.0, height: 145.0)
                 .blur(radius: 2.0)
-                .opacity(fadeButton ? 0.3 : 0.2)
-                .scaleEffect(fadeButton ? 0.57 : 1.0)
+                .opacity(fadeButton ? 0 : 0.4)
+                .scaleEffect(fadeButton ? 1.5 : 1.0)
             
-            //Purple Circumference
-            Circle()
-                .stroke(Color(hex: "8415D4"), lineWidth: 4.0)
-                .frame(width: 200.0, height: 200.0)
             ZStack{
                 //Cyan Circle
                 Circle()
-                    .frame(width: 120.0, height: 120.0)
+                    .frame(width: 150.0, height: 150.0)
                     .foregroundColor(Color(hex: "00D4D2"))
-                    .shadow(radius: 6.0)
+                    .shadow(radius: 1.0)
                 Text("Start")
-                    .font(.system(size: 28.0))
+                    .font(.system(size: 36.0))
                     .fontWeight(.heavy)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(.white)
             }
         }.onAppear{
-            DispatchQueue.main.async {            withAnimation(.linear(duration: 2.0).repeatForever(autoreverses: false)){
+            DispatchQueue.main.async {            withAnimation(.linear(duration: 3.0).repeatForever(autoreverses: false)){
                 fadeButton.toggle()}
             }
         }

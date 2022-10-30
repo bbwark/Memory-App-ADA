@@ -15,7 +15,7 @@ struct StartTestView: View {
             
             Image("brain icon")
                 .resizable()
-                .frame(width: 143.0, height: 143.0)
+                .frame(width: 200.0, height: 200.0)
                 .scaledToFit()
             
             Spacer()

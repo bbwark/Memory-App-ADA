@@ -35,13 +35,13 @@ struct FirstQuestion: Question {
                     .foregroundColor(Color(hex: "00D4D2"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "D45A15"))
+                    .foregroundColor(Color(hex: "8415D4"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "D45A15"))
+                    .foregroundColor(Color(hex: "8415D4"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "D45A15"))
+                    .foregroundColor(Color(hex: "8415D4"))
             }
             .padding(.bottom)
             

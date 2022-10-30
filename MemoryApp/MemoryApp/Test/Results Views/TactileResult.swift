@@ -17,8 +17,6 @@ struct TactileResult: Result {
     var body: some View {
         
         VStack{
-            
-            
             Text(subTitle)
                 .font(.headline)
                 .multilineTextAlignment(.center)
