@@ -16,8 +16,8 @@ struct TakeTestButton: View {
                 .cornerRadius(20.0)
                 .shadow(radius: 4.0)
             HStack{
-                Image(systemName: "doc.text.below.ecg").foregroundColor(Color(hex: "00D4D2"))
-                Text("Take Test").foregroundColor(Color(hex: "00D4D2"))
+                Image(systemName: "doc.text.below.ecg").foregroundColor(Color("Cyan"))
+                Text("Take Test").foregroundColor(Color("Cyan"))
             }
         }
     }

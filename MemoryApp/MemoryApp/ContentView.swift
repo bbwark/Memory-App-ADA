@@ -24,7 +24,7 @@ struct ContentView: View {
                     }
             }
         }
-        .accentColor(Color(hex: "00D4D2"))
+        .accentColor(Color("Cyan"))
 
     }
     

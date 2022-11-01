@@ -32,16 +32,16 @@ struct FirstQuestion: Question {
             HStack{
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "00D4D2"))
+                    .foregroundColor(Color("Cyan"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "8415D4"))
+                    .foregroundColor(Color("Purple"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "8415D4"))
+                    .foregroundColor(Color("Purple"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "8415D4"))
+                    .foregroundColor(Color("Purple"))
             }
             .padding(.bottom)
             

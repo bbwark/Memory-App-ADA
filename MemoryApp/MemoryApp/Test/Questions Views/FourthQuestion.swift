@@ -33,16 +33,16 @@ struct FourthQuestion: Question {
             HStack{
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "00D4D2"))
+                    .foregroundColor(Color("Cyan"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "00D4D2"))
+                    .foregroundColor(Color("Cyan"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "00D4D2"))
+                    .foregroundColor(Color("Cyan"))
                 Rectangle()
                     .frame(width: 40.0, height: 3.0)
-                    .foregroundColor(Color(hex: "00D4D2"))
+                    .foregroundColor(Color("Cyan"))
             }
             .padding(.bottom)
             

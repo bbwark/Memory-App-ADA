@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1555710D2908152C006A8A5A /* StartTestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1555710C2908152C006A8A5A /* StartTestButton.swift */; };
+		158E8D942911915100AB701E /* GameTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E8D932911915100AB701E /* GameTips.swift */; };
+		158E8D982911935700AB701E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E8D972911935700AB701E /* GameView.swift */; };
+		158E8D9A2911936400AB701E /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E8D992911936400AB701E /* TileView.swift */; };
 		1590D4C329080A5200FC4864 /* TakeTestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1590D4C229080A5200FC4864 /* TakeTestButton.swift */; };
 		15AA68C22906E1E700BD3CE6 /* MemoryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA68C12906E1E700BD3CE6 /* MemoryAppApp.swift */; };
 		15AA68C42906E1E700BD3CE6 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA68C32906E1E700BD3CE6 /* Navigation.swift */; };
@@ -35,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		1555710C2908152C006A8A5A /* StartTestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTestButton.swift; sourceTree = "<group>"; };
+		158E8D932911915100AB701E /* GameTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTips.swift; sourceTree = "<group>"; };
+		158E8D972911935700AB701E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		158E8D992911936400AB701E /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		1590D4C229080A5200FC4864 /* TakeTestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeTestButton.swift; sourceTree = "<group>"; };
 		15AA68BE2906E1E700BD3CE6 /* MemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AA68C12906E1E700BD3CE6 /* MemoryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryAppApp.swift; sourceTree = "<group>"; };
@@ -72,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158E8D952911932300AB701E /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				158E8D962911933700AB701E /* Simon Game */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		158E8D962911933700AB701E /* Simon Game */ = {
+			isa = PBXGroup;
+			children = (
+				158E8D972911935700AB701E /* GameView.swift */,
+				158E8D992911936400AB701E /* TileView.swift */,
+			);
+			path = "Simon Game";
+			sourceTree = "<group>";
+		};
 		15AA68B52906E1E700BD3CE6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +117,7 @@
 				15AA68C12906E1E700BD3CE6 /* MemoryAppApp.swift */,
 				15B173E4290847F3004A9DF6 /* ContentView.swift */,
 				15EAF8482906E3A600FBC0D2 /* Test */,
+				158E8D952911932300AB701E /* Games */,
 				15EAF8452906E33E00FBC0D2 /* Navigation */,
 				15EAF8492906E5BF00FBC0D2 /* ColorHexPicker.swift */,
 				15EAF82E2906E2DC00FBC0D2 /* Model.swift */,
@@ -144,6 +168,7 @@
 				15EAF8262906E2DC00FBC0D2 /* KineticResult.swift */,
 				15EAF8292906E2DC00FBC0D2 /* TactileResult.swift */,
 				15EAF82B2906E2DC00FBC0D2 /* VisualResult.swift */,
+				158E8D932911915100AB701E /* GameTips.swift */,
 			);
 			path = "Results Views";
 			sourceTree = "<group>";
@@ -237,6 +262,7 @@
 				15EAF8392906E2DC00FBC0D2 /* QuestionProtocol.swift in Sources */,
 				1590D4C329080A5200FC4864 /* TakeTestButton.swift in Sources */,
 				15AA68D22906E21800BD3CE6 /* Games.swift in Sources */,
+				158E8D9A2911936400AB701E /* TileView.swift in Sources */,
 				1555710D2908152C006A8A5A /* StartTestButton.swift in Sources */,
 				15AA68C42906E1E700BD3CE6 /* Navigation.swift in Sources */,
 				15EAF8432906E2DC00FBC0D2 /* AnswerButton.swift in Sources */,
@@ -249,7 +275,9 @@
 				15EAF8382906E2DC00FBC0D2 /* FourthQuestion.swift in Sources */,
 				15EAF8302906E2DC00FBC0D2 /* Tips.swift in Sources */,
 				15EAF83E2906E2DC00FBC0D2 /* ThirdQuestion.swift in Sources */,
+				158E8D942911915100AB701E /* GameTips.swift in Sources */,
 				15EAF8342906E2DC00FBC0D2 /* AuditoryResult.swift in Sources */,
+				158E8D982911935700AB701E /* GameView.swift in Sources */,
 				15EAF84A2906E5BF00FBC0D2 /* ColorHexPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

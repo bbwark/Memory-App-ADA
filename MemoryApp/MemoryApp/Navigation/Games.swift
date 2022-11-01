@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct Games: View {
+    
+    @State var pressed = false
+    
     var body: some View {
         VStack{
+            NavigationLink(destination: GameView(), isActive: $pressed) {EmptyView()}
             
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 63){
@@ -37,14 +41,27 @@ struct Games: View {
                                         .clipShape(RoundedRectangle(cornerRadius: 20.0))
                                     
                                     VStack{
+                                        
                                         Spacer()
                                         
                                         Text(num.title)
                                             .font(.system(size: 32, weight: .semibold))
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(.black)
-                                            .padding(.bottom, 30.0)
+                                        
+                                        Button {
+                                            pressed.toggle()
+                                        } label: {
+                                            HStack{
+                                                Text("Play")
+                                                    .fontWeight(.semibold)
+                                                    .foregroundColor(Color("Orange"))
+                                                Image(systemName: "gamecontroller")
+                                                    .foregroundColor(Color("Orange"))
+                                            }
+                                        }
                                     }
+                                    .padding(.bottom, 30.0)
                                 }
                                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                             }

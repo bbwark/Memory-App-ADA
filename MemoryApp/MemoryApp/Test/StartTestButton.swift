@@ -14,7 +14,7 @@ struct StartTestButton: View {
         ZStack(){
             //Effect Circumference
             Circle()
-                .stroke(Color(hex: "00D4D2"), lineWidth: 3.0)
+                .stroke(Color("Cyan"), lineWidth: 3.0)
                 .frame(width: 145.0, height: 145.0)
                 .blur(radius: 2.0)
                 .opacity(fadeButton ? 0 : 0.4)
@@ -24,7 +24,7 @@ struct StartTestButton: View {
                 //Cyan Circle
                 Circle()
                     .frame(width: 150.0, height: 150.0)
-                    .foregroundColor(Color(hex: "00D4D2"))
+                    .foregroundColor(Color("Cyan"))
                     .shadow(radius: 1.0)
                 Text("Start")
                     .font(.system(size: 36.0))

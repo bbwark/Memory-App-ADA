@@ -27,13 +27,13 @@ struct AuditoryResult: Result {
             Text(memoryType)
                 .font(.title)
                 .fontWeight(.bold)
-                .foregroundColor(Color(hex: "BCD40B"))
+                .foregroundColor(Color("Green"))
                 .padding(.top)
                     
             Image(systemName: memoryImage)
                 .resizable()
                 .scaledToFit()
-                .foregroundColor(Color(hex: "BCD40B"))
+                .foregroundColor(Color("Green"))
                 .frame(width: 100.0, height: 100.0)
             
             Spacer()
@@ -46,56 +46,10 @@ struct AuditoryResult: Result {
             
             NavigationLink(destination: Navigation(), isActive: $pressed) {EmptyView()}
             
-            HStack{
-                Spacer()
-                
-                VStack{
-                    Button {
-                        pressed.toggle()
-                    } label: {
-                        ZStack{
-                            Circle()
-                                .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
-                                .foregroundColor(Color(hex: "8415D4"))
-                                .shadow(radius: 6.0)
-                            Image(systemName: "gamecontroller")
-                                .resizable()
-                                .foregroundColor(Color.white)
-                                .scaledToFit()
-                                .frame(width: 60.0, height: 60.0)
-                        }
-                    }
-                    Text("Games")
-                        .foregroundColor(Color(hex: "8415D4"))
+            GameTips()
+                .onTapGesture {
+                    pressed.toggle()
                 }
-                .padding(.trailing)
-                
-                Spacer()
-                
-                VStack{
-                    Button {
-                        pressed.toggle()
-                    } label: {
-                        ZStack{
-                            Circle()
-                                .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
-                                .foregroundColor(Color(hex: "00D4D2"))
-                                .shadow(radius: 6.0)
-                            Image(systemName: "lightbulb")
-                                .resizable()
-                                .foregroundColor(Color.white)
-                                .scaledToFit()
-                                .frame(width: 60.0, height: 60.0)
-                        }
-                    }
-                    Text("Tips")
-                        .foregroundColor(Color(hex: "00D4D2"))
-                }
-                .padding(.leading)
-                
-                Spacer()
-            }
-            .padding(.bottom)
         }
         .navigationBarBackButtonHidden(true)
         .navigationTitle("Test Result")
