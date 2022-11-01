@@ -29,9 +29,8 @@ struct MyTip : Identifiable{
     MyTip(id: 9, title: "Visual learners learn by sjhidf745t39yfhw37h9sfo48fh95e8885efho5", Immagine: "9", starred: false)
 ]
 
-var gameCard = [MyTip(id: 1, title: "Memorize Brains", Immagine: "",starred: false),
-    MyTip(id: 2, title: "Simon", Immagine: "",starred: false),
-    MyTip(id: 3, title: "Boh Game", Immagine: "",starred: false),
+var gameCard = [MyTip(id: 1, title: "Simon", Immagine: "simon",starred: false),
+    MyTip(id: 2, title: "Memorize Brains", Immagine: "memobrains",starred: false)
 ]
 
 class Tip: ObservableObject{

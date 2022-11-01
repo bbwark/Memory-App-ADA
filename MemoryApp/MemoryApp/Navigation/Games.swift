@@ -33,7 +33,6 @@ struct Games: View {
                                     
                                     RoundedRectangle(cornerRadius: 20.0)
                                         .foregroundColor(.clear)
-                                        .background(LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom))
                                         .frame(width: 320, height: 460, alignment: .center)
                                         .clipShape(RoundedRectangle(cornerRadius: 20.0))
                                     
@@ -43,7 +42,7 @@ struct Games: View {
                                         Text(num.title)
                                             .font(.system(size: 32, weight: .semibold))
                                             .multilineTextAlignment(.center)
-                                            .foregroundColor(.white)
+                                            .foregroundColor(.black)
                                             .padding(.bottom, 30.0)
                                     }
                                 }
