@@ -161,6 +161,7 @@ struct GameView: View {
                 sequenceToInsert.removeAll()
                 sequenceToRemember.removeAll()
                 playing = false
+                touchable = false
             }
         }
     }
