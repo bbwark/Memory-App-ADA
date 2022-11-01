@@ -5,6 +5,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct GameView: View {
     @State var points: Int = 0
@@ -84,7 +85,7 @@ struct GameView: View {
             .offset(y: playing ? 200 : -80.0)
             .disabled(playing)
         }
-        .navigationTitle("Simon Game")
+        .navigationTitle("AudioBrain")
     }
     
     typealias StepComplete = () -> Void
@@ -137,7 +138,7 @@ struct GameView: View {
     func checkNextRound() {
         if(listening){
             
-            //controlla se l'ultimo elemento inserito in posizione N è lo stesso nella posizione N della sequenza corrispondente: se non lo è allora resetta entrambe le sequenze, azzera i punti, mette listening false; se lo è allora controlla se le sequenze sono della stessa lunghezza: se lo sono allora aggiunge un punto, mette listening su false, chiama il next round
+            //check if the last element inserted in position N is the same in position N of the corresponding sequence: if it is not, then it resets both sequences, resets the points, sets listening false; if it is then check if the sequences are of the same length: if they are then add a period, set listening to false, call the next round
             
             let lastInsertedIndex : Int = sequenceToInsert.count - 1
             
@@ -149,6 +150,7 @@ struct GameView: View {
                     print("ENTERELY SAME")
                     points += 1
                     listening = false
+                    touchable = false
                     startRound()
                 }
             }
@@ -168,6 +170,9 @@ struct GameView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + delay){
             withAnimation(.easeInOut(duration: 0.2)){
                 firstBright.toggle() //make it to bright
+                
+                AudioServicesPlaySystemSound(1201)
+                
                 withAnimation(.easeOut(duration: 0.2).delay(0.3)){
                     firstBright.toggle() //make it opaque
                 }
@@ -179,6 +184,9 @@ struct GameView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + delay){
             withAnimation(.easeInOut(duration: 0.2)){
                 secondBright.toggle() //make it to bright
+                
+                AudioServicesPlaySystemSound(1200)
+                
                 withAnimation(.easeOut(duration: 0.2).delay(0.3)){
                     secondBright.toggle() //make it opaque
                 }
@@ -189,6 +197,10 @@ struct GameView: View {
     func thirdTileBright(delay: Double) -> Void{
         DispatchQueue.main.asyncAfter(deadline: .now() + delay){
             withAnimation(.easeInOut(duration: 0.2)){
+                
+                AudioServicesPlaySystemSound(1202)
+                
+                
                 thirdBright.toggle() //make it to bright
                 withAnimation(.easeOut(duration: 0.2).delay(0.3)){
                     thirdBright.toggle() //make it opaque
@@ -201,6 +213,9 @@ struct GameView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + delay){
             withAnimation(.easeInOut(duration: 0.2)){
                 fourthBright.toggle() //make it to bright
+                
+                AudioServicesPlaySystemSound(1203)
+                
                 withAnimation(.easeOut(duration: 0.2).delay(0.3)){
                     fourthBright.toggle() //make it opaque
                 }
